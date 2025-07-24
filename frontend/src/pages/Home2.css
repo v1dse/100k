@@ -1,0 +1,66 @@
+
+.Custom-Blur-1 {
+
+position: absolute;
+width: 522px;
+height: 100px;
+top: 150px;
+margin: 0;
+background: linear-gradient(180deg, rgba(7, 7, 7, 0) 0%, #070707 100%);
+transform: rotate(-90deg);
+right: -49%;
+top:400px;
+}
+*{
+    
+}
+.Custom-Blur-2{
+    /* Rectangle 7085 */
+
+position: absolute;
+width: 100%;
+height: 522px;
+
+
+background: linear-gradient(180deg, rgba(7, 7, 7, 0) 0%, #070707 100%);
+
+}
+
+.Custom-Blur-3{
+    /* Rectangle 7087 */
+
+position: absolute;
+width: 500px;
+height: 100px;
+left: -50%;
+
+background: linear-gradient(180deg, rgba(7, 7, 7, 0) 0%, #070707 100%);
+transform: rotate(90deg);
+
+}
+.button-home-2{
+    margin-top: 12px !important;
+    
+}
+.Custom-Blur-4{
+    /* Rectangle 7086 */
+
+position: absolute;
+width: 100%;
+height: 140px;
+left: 0px;
+top: 465px;
+
+background: linear-gradient(180deg, rgba(7, 7, 7, 0) 0%, #070707 100%);
+
+}
+
+.photo {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    margin-top: 50px;
+    margin-bottom: 20px;
+    position: relative;
+}

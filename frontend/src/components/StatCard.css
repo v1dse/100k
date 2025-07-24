@@ -1,0 +1,39 @@
+.stat-card {
+  border-radius: 1rem;
+  padding: 1rem;
+  
+  transform-origin: center;
+  backdrop-filter: blur(4px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.stat-card:hover {
+  transform: scale(1.03);
+}
+
+.stat-card.primary {
+  background-color: hsl(217, 91%, 60%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: 0 0 40px hsla(217, 91%, 60%, 0.3);
+}
+
+.stat-card.secondary {
+  background-color: hsla(220, 13%, 15%, 0.5);
+  color: hsl(0, 0%, 95%);
+  border: 1px solid hsla(220, 13%, 20%, 0.5);
+}
+
+.stat-card-label {
+  font-size: 0.875rem;
+  color: hsl(215, 16%, 65%);
+  margin-bottom: 0.25rem;
+}
+
+.stat-card.primary .stat-card-label {
+  color: hsla(0, 0%, 100%, 0.8);
+}
+
+.stat-card-value {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
