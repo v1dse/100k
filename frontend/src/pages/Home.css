@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Druk Cyr';
+  src: url('../fonts/DrukCyr-Super.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Codec Pro';
+  src: url('../fonts/CodecPro.woff2') format('woff2'),
+       url('../fonts/CodecPro.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.home-content {
+  min-height: 100vh;
+  width: 100%;
+  background: #070707;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  box-sizing: border-box;
+  padding: 0px ;
+  margin: 0;
+  overflow: hidden;
+}
+
+.Back-txt {
+  font-family: 'Druk Cyr', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 100px;
+  line-height: 100%;
+  text-align: center;
+  background: linear-gradient(180deg, #1E1D1D 0%, #070707 100%);
+  background-clip: text;
+  color: transparent;
+  margin: 0;
+}
+
+.back-title-blue{
+    position: relative;
+    font-family: 'Codec Pro';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 100%;
+    text-align: center;
+
+mix-blend-mode: plus-lighter;
+background:linear-gradient(88.34deg, #0210F8 1%, #18C7FD 1.08%, #FFFFFF 88.57%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 12px rgba(24, 199, 253, 0.4);
+}
+
+.photo{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    margin-top: 50px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+
+
+
+.Back-title {
+
+  /* Твоя личная команда под 0% комиссии */
+
+position: absolute;
+
+font-family: 'Codec Pro';
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 100%;
+/* or 74px */
+text-align: center;
+
+color: #FFFFFF;
+mix-blend-mode: normal;
+
+margin-top: -120px;
+
+
+
+/* Твоя личная команда под 0% комиссии */
+
+position: relative;
+
+
+font-family: 'Codec Pro';
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 100%;
+/* or 74px */
+text-align: center;
+
+mix-blend-mode: plus-lighter;
+
+}
+
+.Back-sub {
+  font-family: 'Codec Pro', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  text-align: center;
+  color: #787878;
+  margin: 0;
+  margin-top: -15px;
+  z-index: 10;
+}
+
+
+.Btn-home {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 60px;
+  gap: 10px;
+  width: 310px;
+  height: 100px;
+  background: linear-gradient(90deg, #0033FF 0%, #0066FF 100%);
+  border: 3px solid rgba(255, 255, 255, 0.46);
+  border-radius: 98px;
+  font-family: 'Codec Pro', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 32px;
+  transition: filter 0.2s;
+  z-index: 30;
+}
+.Btn-home:hover {
+  filter: brightness(1.1);
+}

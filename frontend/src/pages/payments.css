@@ -1,0 +1,306 @@
+.wallet-container {
+    width: 100%;
+    justify-content: center;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  background-color: #16181D;
+  min-height: 100vh;
+
+}
+
+button{
+    border: none;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding-bottom: 15px;
+    padding: 8px;
+    font-family: 'Codec Pro';
+}
+
+.wallet-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.wallet-header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.25rem;
+}
+
+.wallet-header p {
+  font-size: 0.875rem;
+  color: #a0a0a0;
+}
+
+.balance-card {
+  background: linear-gradient(135deg, #3B82F6, #2563EB);
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.balance-card .blur-circle {
+  position: absolute;
+  border-radius: 9999px;
+  background-color: rgba(255, 255, 255, 0.1);
+  z-index: 0;
+}
+
+.blur-circle.large {
+  width: 4rem;
+  height: 4rem;
+  top: 1rem;
+  right: 1rem;
+}
+
+.blur-circle.small {
+  width: 2rem;
+  height: 2rem;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.balance-content {
+  position: relative;
+  z-index: 1;
+}
+
+.balance-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  opacity: 0.9;
+}
+
+.balance-amount {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.balance-label {
+  font-size: 0.875rem;
+  opacity: 0.8;
+}
+
+.eye{
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    margin-left: 0.5rem;
+    padding: 0;
+}
+
+.balance-toggle {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 9999px;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.balance-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.quick-actions {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.4rem;
+  margin-bottom: 2rem;
+}
+
+.quick-action {
+  border-radius: 1rem;
+  text-align: center;
+  padding: 1rem 0.5rem;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.quick-action-btn{
+    width: 90px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+    
+    border-radius: 0.85rem;
+    background-color: #1F2128;
+    padding-bottom: 15px;
+    padding: 8px;
+}
+.quick-action:hover {
+  background-color: #2C2F36;
+}
+
+.bg-blue-500 {
+  background-color: #3B82F6;
+}
+
+.bg-green-500 {
+  background-color: #22C55E;
+}
+
+.bg-purple-500 {
+  background-color: #8B5CF6;
+}
+
+.bg-orange-500 {
+  background-color: #F97316;
+}
+
+
+
+.quick-action:hover {
+  background-color: #2C2F36;
+}
+
+.quick-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0 auto 1rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.quick-label {
+  font-size: 0.75rem;
+  color: #ffffff;
+  font-weight: 500;
+    margin-top: 0.25rem;
+    margin-bottom: 30px;
+}
+
+.transactions-card {
+  background-color: #1F2128;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+}
+
+.transactions-card h3 {
+  font-size: 1.125rem;
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.transaction-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.transaction-icon.income {
+  background-color: rgba(34, 197, 94, 0.1); /* зеленый фон */
+  color: #22C55E;
+}
+
+.transaction-icon.expense {
+  background-color: rgba(239, 68, 68, 0.1); /* красный фон */
+  color: #EF4444;
+}
+
+.transaction-amount.income {
+  color: #22C55E;
+}
+
+.transaction-amount.expense {
+  color: #EF4444;
+}
+
+.operations {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+.transaction-icon {
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.transaction-icon.income {
+  background-color: rgba(34, 197, 94, 0.1); /* green-500/10 */
+  color: #22C55E; /* green-500 */
+}
+
+.transaction-icon.expense {
+  background-color: rgba(239, 68, 68, 0.1); /* red-500/10 */
+  color: #EF4444; /* red-500 */
+}
+
+.transaction-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.transaction-title {
+  font-size: 0.875rem;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.transaction-date {
+  font-size: 0.75rem;
+  color: #a0a0a0;
+}
+
+.transaction-amount {
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.transaction-amount.income {
+  color: #22C55E;
+}
+
+.transaction-amount.expense {
+  color: #EF4444;
+}
