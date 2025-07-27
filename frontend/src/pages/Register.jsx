@@ -68,6 +68,7 @@ const handleSubmit = async e => {
               required
             />
           </div>
+          <Link to="/payments">войти без регистрации </Link>
           <div className="input">
             <button
               className="main-form btn animated bounceInDown"
