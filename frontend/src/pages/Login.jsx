@@ -80,7 +80,7 @@ const Login = () => {
           <div className="ripples buttonRipples">
             <span className="ripplesCircle"></span>
           </div>
-<Link to="/wallet">
+<Link to="/payments">
 <button type="submit" className="button buttonBlue">
           Зайти без регистрации 
           <div className="ripples buttonRipples">
