@@ -74,9 +74,7 @@ const Login = () => {
         </div>
         <div className="links">
           <Link to="/register">Don't have an account?</Link>
-<Link to="/payments">
-войти без регистрации 
-</Link>
+          <Link to="/payments">войти без регистрации </Link>
         </div>
         <button type="submit" className="button buttonBlue">
           Login
