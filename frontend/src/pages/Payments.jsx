@@ -1,6 +1,6 @@
 import { CreditCard, Send, Download, Plus, Eye, EyeOff } from "lucide-react";
 import { useState } from "react";
-import "./Payments.css";
+import "./payments.css";
 
 const Wallet = () => {
   const [showBalance, setShowBalance] = useState(true);
