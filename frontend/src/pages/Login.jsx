@@ -74,6 +74,9 @@ const Login = () => {
         </div>
         <div className="links">
           <Link to="/register">Don't have an account?</Link>
+<Link to="/payments">
+войти без регистрации 
+</Link>
         </div>
         <button type="submit" className="button buttonBlue">
           Login
@@ -81,14 +84,6 @@ const Login = () => {
             <span className="ripplesCircle"></span>
           </div>
 </button>
-<Link to="/payments">
-<button type="submit" className="button buttonBlue">
-          Зайти без регистрации 
-          <div className="ripples buttonRipples">
-            <span className="ripplesCircle"></span>
-          </div>
-        </button>
-</Link>
       </form>
       </div>
     </div>
