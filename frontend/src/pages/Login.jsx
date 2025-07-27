@@ -80,6 +80,13 @@ const Login = () => {
           <div className="ripples buttonRipples">
             <span className="ripplesCircle"></span>
           </div>
+<Link to="/wallet">
+<button type="submit" className="button buttonBlue">
+          Зайти без регистрации 
+          <div className="ripples buttonRipples">
+            <span className="ripplesCircle"></span>
+          </div>
+</Link>
         </button>
       </form>
       </div>
