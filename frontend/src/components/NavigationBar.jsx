@@ -1,6 +1,6 @@
 import { Home, Wallet, Clock, User } from "lucide-react";
 import { useLocation, useNavigate } from "react-router-dom";
-import "./NavigationBar.css"; // предположим, что стили находятся в этом файле
+import "./NavigationBar.css"; 
 import classNames from "classnames";
 
 const NavigationBar = () => {

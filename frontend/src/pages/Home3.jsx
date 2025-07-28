@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import "./Home3.css";
-import logo from './assets/Group 65.png'; // Assuming you have a logo image
+import logo from './assets/Group 65.png'; 
 
 function Home3() {
   const navigate = useNavigate();
@@ -13,7 +13,7 @@ function Home3() {
         <p className='Back-sub'>Мы запускаем контент, который <br></br>приносит реальные деньги</p>
 
       <button className='Btn-home' onClick={() => navigate('/login')}>
-        Продолжить
+        Начать
       </button>
     </div>
   );

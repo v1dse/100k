@@ -38,7 +38,6 @@ async function updateAllAnalytics() {
   console.log('Аналитика успешно обновлена');
 }
 
-// Планировщик: каждый день в 03:00 по серверному времени
 cron.schedule('0 3 * * *', async () => {
   console.log('Запуск обновления аналитики...');
   await updateAllAnalytics();

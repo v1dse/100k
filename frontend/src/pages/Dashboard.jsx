@@ -4,31 +4,31 @@ import NavigationBar from "../components/NavigationBar";
 import "./Dashboard.css";
 import axios from "axios";
 import React, { useState, useEffect } from 'react';
-import { AuthContext } from '../context/AuthContext'; // путь может отличаться
-import logo from './assets/dashboard.png'; // путь к логотипу
+import { AuthContext } from '../context/AuthContext'; 
+import logo from './assets/dashboard.png';
 
 const Dashboard = () => {
   const [user, setUser] = useState(null);
-
-  useEffect(() => {
-    const fetchUser = async () => {
-      try {
-        const token = localStorage.getItem('token');
-        const res = await axios.get('/api/user/profile', {
-          headers: { Authorization: `Bearer ${token}` }
-        });
-        setUser(res.data);
-      } catch (err) {
-        console.error("Ошибка загрузки профиля:", err);
-        setUser(null);
-      }
-    };
-    fetchUser();
-  }, []);
-
-  if (!user) {
-    return <div className="text-center py-10 text-muted">Загрузка...</div>;
-  }
+  ///
+  ///useEffect(() => {
+  ///  const fetchUser = async () => {
+  ///    try {
+  ///      const token = localStorage.getItem('token');
+  ///      const res = await axios.get('/api/user/profile', {
+  ///        headers: { Authorization: `Bearer ${token}` }
+  ///      });
+  ///      setUser(res.data);
+  ///    } catch (err) {
+  ///      console.error("Ошибка загрузки профиля:", err);
+  ///      setUser(null);
+  ///    }
+  ///  };
+  ///  fetchUser();
+  ///}, []);
+  ///
+  ///if (!user) {
+  ///  return <div className="text-center py-10 text-muted">Загрузка...</div>;
+  ///}
 
   return (
     <div className="dashboard min-h-screen bg-background pb-20">
@@ -45,7 +45,7 @@ const Dashboard = () => {
           <img src={logo} alt="logo" className="dashboard-logo absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20" />
           <div className="greeting-card absolute bottom-6 left-1/2 transform -translate-x-1/2 z-30 px-6 py-3 rounded-2xl backdrop-blur-md bg-card/90">
             <h2 className="greeting-text text-card-foreground text-lg font-semibold">
-              Привет, {user.username}!
+              Привет, mikhail!
             </h2>
           </div>
         </div>

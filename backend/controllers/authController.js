@@ -1,6 +1,10 @@
 import User from '../models/User.js';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
+import { generateRandomCode } from '../utils/codeGenerator.js'; 
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 export const register = async (req, res) => {
   try {
@@ -11,7 +15,6 @@ export const register = async (req, res) => {
 
     const hashedPassword = await bcrypt.hash(password, 10);
 
-    // Ваш секретный код для админа (можно хранить в .env)
     const SECRET_ADMIN_CODE = process.env.ADMIN_CODE || 'supersecret123';
 
     let role = 'user';
@@ -29,8 +32,16 @@ export const register = async (req, res) => {
     res.status(500).json({ message: 'Server error' });
   }
 };
+const referralCode = generateRandomCode(); 
 
-// ДОБАВЬТЕ ЭТУ ФУНКЦИЮ:
+const user = await User.create({
+  username,
+  email,
+  password: hashedPassword,
+  referralCode,
+  referredBy: req.body.referredBy || null,
+});
+
 export const login = async (req, res) => {
   try {
     const { email, password } = req.body;

@@ -15,7 +15,6 @@ export const getProfile = async (req, res) => {
   }
 };
 
-// updateProfile (Sequelize)
 export const updateProfile = async (req, res) => {
   try {
     const { username, photo } = req.body;

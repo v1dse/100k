@@ -28,7 +28,6 @@
   color: hsl(var(--muted-foreground));
 }
 
-/* Profile Card Styles */
 .profile-card {
   background: var(--gradient-primary);
   border-radius: 1.5rem;
@@ -70,7 +69,7 @@
   border-radius: 1rem;
   background: linear-gradient(180deg, #0033FF 0%, #0066ff23 100%);
   display: flex;
-  position: relative; /* обязательно для z-index */
+  position: relative; 
   z-index: 2;
   overflow: hidden;
   align-items: center;

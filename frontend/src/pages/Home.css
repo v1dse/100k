@@ -67,8 +67,8 @@ background:linear-gradient(88.34deg, #0210F8 1%, #18C7FD 1.08%, #FFFFFF 88.57%);
 }
 
 .photo{
-    width: 500px;
-    height: 500px;
+    width:30rem !important;
+    height: auto !important;
     object-fit: cover;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
     margin-top: 50px;
@@ -81,8 +81,6 @@ background:linear-gradient(88.34deg, #0210F8 1%, #18C7FD 1.08%, #FFFFFF 88.57%);
 
 .Back-title {
 
-  /* Твоя личная команда под 0% комиссии */
-
 position: absolute;
 
 font-family: 'Codec Pro';
@@ -90,29 +88,17 @@ font-style: normal;
 font-weight: 500;
 font-size: 30px;
 line-height: 100%;
-/* or 74px */
 text-align: center;
-
 color: #FFFFFF;
 mix-blend-mode: normal;
-
 margin-top: -120px;
-
-
-
-/* Твоя личная команда под 0% комиссии */
-
 position: relative;
-
-
 font-family: 'Codec Pro';
 font-style: normal;
 font-weight: 500;
 font-size: 30px;
 line-height: 100%;
-/* or 74px */
 text-align: center;
-
 mix-blend-mode: plus-lighter;
 
 }

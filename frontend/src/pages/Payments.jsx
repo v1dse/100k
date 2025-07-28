@@ -27,25 +27,18 @@ const Wallet = () => {
         {/* Header */}
         <div className="wallet-header">
           <h1 className="wallet-title">Кошелек</h1>
-          <p className="wallet-subtitle">Управление финансами</p>
         </div>
 
         {/* Balance Card */}
         <div className="balance-card">
           <div className="balance-info">
+            <span className="balance-all">Общий баланс</span>
             <div className="balance-top">
-              <span>Общий баланс</span>
-              <button
-                onClick={() => setShowBalance(!showBalance)}
-                className="eye"
-              >
-                {showBalance ? <Eye size={16} /> : <EyeOff size={16} />}
-              </button>
+
             </div>
             <div className="balance-amount">
               {showBalance ? "€ 1,247.50" : "€ ••••••"}
             </div>
-            <div className="balance-label">Доступно для вывода</div>
           </div>
         </div>
 
@@ -93,6 +86,7 @@ const Wallet = () => {
             })}
           </div>
         </div>
+        <div className="clear"></div>
       </div>
     </div>
   );

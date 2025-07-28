@@ -81,6 +81,9 @@ const Login = () => {
             <span className="ripplesCircle"></span>
           </div>
         </button>
+        <button type="button" className="button buttonGreen" onClick={() => navigate('/wallet')}>
+          Register
+          </button>
       </form>
       </div>
     </div>

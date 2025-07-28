@@ -2,7 +2,7 @@ import { Sequelize } from 'sequelize';
 
 const sequelize = new Sequelize({
   dialect: 'sqlite',
-  storage: './database.sqlite', // Файл базы будет создан в корне backend
+  storage: './database.sqlite', 
   logging: false,
 });
 

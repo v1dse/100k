@@ -33,7 +33,6 @@ async function fetchInstagramAnalytics(accessToken, igUserId) {
 }
 
 async function fetchTikTokAnalytics(accessToken, userId) {
-  // Пример: подставь реальный SDK TikTok или API, если доступен
   console.warn('TikTok аналитика пока не реализована');
   return {
     followers: 0,

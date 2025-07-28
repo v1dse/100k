@@ -3,6 +3,6 @@ import { getAnalytics } from '../controllers/analyticsController.js';
 
 const router = express.Router();
 
-router.post('/', getAnalytics); // POST: { type: 'youtube' | 'instagram' | 'tiktok', accessToken, channelId/userId }
+router.post('/', getAnalytics); 
 
 export default router;

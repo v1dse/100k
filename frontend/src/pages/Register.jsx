@@ -14,15 +14,14 @@ const Register = () => {
 const handleSubmit = async e => {
   e.preventDefault();
   try {
-    // Отправляем данные на backend
+
     const res = await axios.post('/api/authRoutes/register', formData);
-    // Ожидаем, что backend вернет объект пользователя с id
+
     if ((res.status === 201 || res.status === 200) && res.data.user && res.data.user.id) {
-      // Переход на профиль пользователя
       navigate(`/profile/${res.data.user.id}`);
       localStorage.setItem('token', res.data.token);
     } else {
-      // Если backend не вернул id, fallback на login
+      
       navigate('/login');
     }
   } catch (err) {
@@ -33,6 +32,9 @@ const handleSubmit = async e => {
 
   return (
     <div className="register-container">
+      <hgroup>
+        <h1>Register</h1>
+      </hgroup>
       <form onSubmit={handleSubmit} className="form row" id="register">
         <div className="col-sm-12 container">
           <div className="input">

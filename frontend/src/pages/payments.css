@@ -3,7 +3,7 @@
     justify-content: center;
   margin: 0 auto;
   padding: 2rem 1.5rem;
-  background-color: #16181D;
+  background-color: #070707;
   min-height: 100vh;
 
 }
@@ -27,29 +27,56 @@ button{
 .wallet-header {
   text-align: center;
   margin-bottom: 2rem;
+  justify-content: center;
+  text-align: center;
+  display: block;
 }
 
 .wallet-header h1 {
+  display: block;
   font-size: 1.5rem;
   font-weight: 700;
+  text-align: center;
+  justify-content: center;
   color: #ffffff;
   margin-bottom: 0.25rem;
+  border: 1px solid #FFFFFF9E;
+
+  width: fit-content;
+  align-items: center;
+  margin: 0 auto;
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 13px 20px;
+border: 1px solid #FFFFFF;
+backdrop-filter: blur(21.05px);
+border-radius: 55.5px;
+
+font-weight: 400;
+font-size: 24px;
+
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+
 }
 
-.wallet-header p {
-  font-size: 0.875rem;
-  color: #a0a0a0;
-}
 
 .balance-card {
-  background: linear-gradient(135deg, #3B82F6, #2563EB);
+  justify-content: center;
+  text-align: center;
   border-radius: 1.5rem;
   padding: 1.5rem;
   color: #ffffff;
   position: relative;
   overflow: hidden;
   margin-bottom: 2rem;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  
 }
 
 .balance-card .blur-circle {
@@ -64,6 +91,11 @@ button{
   height: 4rem;
   top: 1rem;
   right: 1rem;
+}
+
+.balance-all{
+  text-align: center;
+  justify-content: center;
 }
 
 .blur-circle.small {
@@ -91,6 +123,13 @@ button{
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
+  background: linear-gradient(89.65deg, #FFFFFF 20.47%, #18C7FD 99.59%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 12px rgba(24, 199, 253, 0.4);
+    border: 1px solid #FFFFFF9E;
+    padding: 2rem 1rem;
+    border-radius: 25px;
 }
 
 .balance-label {
@@ -147,40 +186,48 @@ button{
 }
 
 .quick-action-btn{
-    width: 90px;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #ffffff;
-    font-size: 0.875rem;
-    font-weight: 500;
-    text-decoration: none;
-    
-    border-radius: 0.85rem;
-    background-color: #1F2128;
-    padding-bottom: 15px;
-    padding: 8px;
+    /* Frame 103 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-size: 12px;
+
+width: 85.81px;
+height: 85px;
+
+background: linear-gradient(327.41deg, #171212 4.33%, #191919 93.27%);
+border: 1.17434px solid rgba(255, 255, 255, 0.22);
+border-radius: 30.1939px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
 }
 .quick-action:hover {
   background-color: #2C2F36;
 }
 
 .bg-blue-500 {
-  background-color: #3B82F6;
+  background: linear-gradient(42.27deg, #13A9FF 5.85%, #404BFF 97.08%);
 }
 
 .bg-green-500 {
-  background-color: #22C55E;
+  background: linear-gradient(42.27deg, #22C55E 5.85%, #22C55E 97.08%);
 }
 
 .bg-purple-500 {
-  background-color: #8B5CF6;
+  background: linear-gradient(42.27deg, #8B5CF6 5.85%, #8B5CF6 97.08%);
 }
 
 .bg-orange-500 {
-  background-color: #F97316;
+  background: linear-gradient(42.27deg, #F97316 5.85%, #F97316 97.08%);
 }
 
 
@@ -208,24 +255,25 @@ button{
     margin-bottom: 30px;
 }
 
-.transactions-card {
-  background-color: #1F2128;
-  border-radius: 1.5rem;
-  padding: 1.5rem;
-}
+
 
 .transactions-card h3 {
   font-size: 1.125rem;
   color: #ffffff;
   font-weight: 600;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .transaction-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 0;
+  padding: 0.5rem 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1); 
+  border-radius: 0.75rem;
+  margin-bottom: 0.5rem;
+
 }
 
 .transaction-left {
@@ -235,12 +283,12 @@ button{
 }
 
 .transaction-icon.income {
-  background-color: rgba(34, 197, 94, 0.1); /* зеленый фон */
+  background-color: rgba(34, 197, 94, 0.1); 
   color: #22C55E;
 }
 
 .transaction-icon.expense {
-  background-color: rgba(239, 68, 68, 0.1); /* красный фон */
+  background-color: rgba(239, 68, 68, 0.1);
   color: #EF4444;
 }
 
@@ -267,13 +315,13 @@ button{
 }
 
 .transaction-icon.income {
-  background-color: rgba(34, 197, 94, 0.1); /* green-500/10 */
-  color: #22C55E; /* green-500 */
+  background-color: rgba(34, 197, 94, 0.1); 
+  color: #22C55E;
 }
 
 .transaction-icon.expense {
-  background-color: rgba(239, 68, 68, 0.1); /* red-500/10 */
-  color: #EF4444; /* red-500 */
+  background-color: rgba(239, 68, 68, 0.1); 
+  color: #EF4444; 
 }
 
 .transaction-details {
@@ -303,4 +351,40 @@ button{
 
 .transaction-amount.expense {
   color: #EF4444;
+}
+
+.clear{
+  height: 100px;
+}
+
+
+@media (min-width: 360px) and (max-width: 430px) {
+  
+  .quick-action-btn{
+    width: 73px;
+    height: 78px;
+    font-size: 10px;
+  }
+  .quick-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+@media (min-width: 760px) {
+  .quick-actions {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .quick-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .quick-action-btn {
+    width: 150px;
+    height: 150px;
+    font-size: 20px;
+  }
+
+  
 }

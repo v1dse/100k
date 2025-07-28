@@ -1,6 +1,5 @@
 export const getAnalytics = async (req, res) => {
   try {
-    // Здесь будет логика получения данных с YouTube, Instagram, TikTok
     res.json({
       youtube: { views: 12000, subscribers: 500 },
       instagram: { followers: 800, posts: 100 },

@@ -15,7 +15,7 @@ import Home3 from "./pages/Home3";
 import Profile from "./pages/Profile";
 import Wallet from "./pages/Payments";
 import Analytics from "./pages/Analytics";
-import NavigationBar from "./components/NavigationBar"; // предположим
+import NavigationBar from "./components/NavigationBar"; 
 import Dashboard from "./pages/Dashboard";
 
 const queryClient = new QueryClient();

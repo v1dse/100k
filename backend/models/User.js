@@ -7,7 +7,19 @@ const User = sequelize.define('User', {
   password: { type: DataTypes.STRING, allowNull: false },
   role: { type: DataTypes.STRING, defaultValue: 'user' },
   photo: { type: DataTypes.STRING, defaultValue: '' },
-  adminCode: { type: DataTypes.STRING, allowNull: true }, // новое поле
+  adminCode: { type: DataTypes.STRING, allowNull: true }, 
+  referralCode: {
+  type: DataTypes.STRING,
+  unique: true,
+},
+referredBy: {
+  type: DataTypes.STRING,
+  allowNull: true,
+},
+balance: {
+  type: DataTypes.FLOAT,
+  defaultValue: 0,
+}
 }, { timestamps: true });
 
 
