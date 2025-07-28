@@ -1,6 +1,7 @@
 import { CreditCard, Send, Download, Plus, Eye, EyeOff } from "lucide-react";
 import { useState } from "react";
 import "./payments.css";
+import NavigationBar from '../components/NavigationBar';
 
 const Wallet = () => {
   const [showBalance, setShowBalance] = useState(true);
@@ -94,6 +95,7 @@ const Wallet = () => {
           </div>
         </div>
       </div>
+     <NavigationBar />
     </div>
   );
 };
