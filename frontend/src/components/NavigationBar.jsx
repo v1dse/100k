@@ -1,4 +1,4 @@
-import { Home, Wallet, Clock, User } from "lucide-react";
+import { Home, Wallet, Clock, User, Command } from "lucide-react";
 import { useLocation, useNavigate } from "react-router-dom";
 import "./NavigationBar.css"; 
 import classNames from "classnames";
@@ -10,8 +10,10 @@ const NavigationBar = () => {
   const navItems = [
     { icon: Home, path: "/dashboard" },
     { icon: Wallet, path: "/wallet" },
+    {icon: Command, path: "/comand"},
     { icon: Clock, path: "/analytics"  },
     { icon: User, path: "/profile" },
+
   ];
 
   return (

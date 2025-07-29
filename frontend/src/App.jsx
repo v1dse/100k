@@ -17,6 +17,7 @@ import Wallet from "./pages/Payments";
 import Analytics from "./pages/Analytics";
 import NavigationBar from "./components/NavigationBar"; 
 import Dashboard from "./pages/Dashboard";
+import  Comand  from "./pages/Comand";
 
 const queryClient = new QueryClient();
 
@@ -31,6 +32,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/start2" element={<Home2 />} />
+              <Route path="/comand" element={<Comand />}/>
               <Route path="/start3" element={<Home3 />} />
               <Route path="/login" element={<Login />} />
               <Route path="/dashboard/:id" element={<Dashboard />} />

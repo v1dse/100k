@@ -67,7 +67,7 @@ background:linear-gradient(88.34deg, #0210F8 1%, #18C7FD 1.08%, #FFFFFF 88.57%);
 }
 
 .photo{
-    width:30rem !important;
+    width:100% !important;
     height: auto !important;
     object-fit: cover;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
@@ -144,4 +144,24 @@ mix-blend-mode: plus-lighter;
 }
 .Btn-home:hover {
   filter: brightness(1.1);
+}
+
+@media (min-width: 360px) and (max-width:430px){
+  .Back-title{
+    font-size: 24px;
+  }
+  .back-title-blue{
+    font-size: 24px;
+  }
+  .Back-sub{
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+  .Btn-home{
+    margin-top: 0px;
+    font-size: 28px !important;
+  }
+  .photo{
+    margin-top: 0px !important;
+  }
 }
