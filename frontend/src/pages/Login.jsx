@@ -74,16 +74,21 @@ const Login = () => {
         </div>
         <div className="links">
           <Link to="/register">Don't have an account?</Link>
+          <Link to="/payments">войти без регистрации </Link>
         </div>
         <button type="submit" className="button buttonBlue">
           Login
           <div className="ripples buttonRipples">
             <span className="ripplesCircle"></span>
           </div>
+<<<<<<< HEAD
         </button>
         <button type="button" className="button buttonGreen" onClick={() => navigate('/wallet')}>
           Register
           </button>
+=======
+</button>
+>>>>>>> eaad9db4a2fd4580c183d7f1eb80c71fdd77e667
       </form>
       </div>
     </div>
