@@ -81,12 +81,10 @@ const Login = () => {
           <div className="ripples buttonRipples">
             <span className="ripplesCircle"></span>
           </div>
-<<<<<<< HEAD
         </button>
         <button type="button" className="button buttonGreen" onClick={() => navigate('/wallet')}>
           Register
           </button>
-=======
 </button>
 >>>>>>> eaad9db4a2fd4580c183d7f1eb80c71fdd77e667
       </form>
